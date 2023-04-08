@@ -30,20 +30,6 @@ public class Task2 {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public static Deque<String> createDeque() {
         Deque<String> deque = new LinkedList<>();
         deque.add("a");
@@ -65,6 +51,17 @@ public class Task2 {
 
         return queue;
     }
+
+    public static void rememberDequeMethods() {
+        Deque<Integer> deque = new LinkedList<>();
+        deque.addFirst(1); deque.addLast(2);
+        deque.removeLast(); deque.removeLast();
+        deque.offerFirst(1); deque.offerLast(2);
+        deque.pollFirst(); deque.pollLast();
+        deque.getFirst(); deque.getLast();
+        deque.peekFirst(); deque.peekLast();
+    }
+
 
 
 }
